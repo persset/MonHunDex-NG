@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { MonstersComponent } from './monsters/monsters.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { MonstersComponent } from './monsters/monsters.component';
     HeaderComponent,
     FooterComponent,
     MonstersComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
