@@ -1,9 +1,11 @@
-<app-header></app-header>
+<div id="content-container h-screen">
+    <app-header></app-header>
 
-<body class="flex justify-center py-11 bg-placeholder-bgi h-screen">
-    <div class="w-10/12 border-solid border-4 border-red-500 rounded-md">
-        <router-outlet></router-outlet>
-    </div>
-</body>
+    <body class="flex justify-center py-11 bg-placeholder-bgi">
+        <div class="w-10/12 border-solid border-4 border-red-500 rounded-md h-full">
+            <router-outlet></router-outlet>
+        </div>
+    </body>
 
-<app-footer></app-footer>
+    <app-footer></app-footer>
+</div>
