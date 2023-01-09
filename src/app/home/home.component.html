@@ -21,7 +21,7 @@
 <hr class="border-solid border-t-2 border-black" id="division-line">
 <br>
 <div class="flex relative right-0" id="daily-monster">
-    <table class="table-fixed border-solid border-2 border-sky-500 w-1/6 min-w-1/12 max-w-sm">
+    <table class="table-fixed border-solid border-2 border-sky-500 w-max min-w-8/12 max-w-sm">
         <thead>
             <th class="text-center">Daily Monster</th>
         </thead>
@@ -38,7 +38,7 @@
     </table>
 
     <div id="daily-monster-info">
-        <nav class="flex left space-x-4 fixed h-10 border rounded ml-2">
+        <nav class="flex left space-x-4 fixed h-10 border rounded ml-2 absolute">
             <button class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:underline hover:text-slate-900"
                 (click)="openMonsterInfo('description')">Description</button>
             <button class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:underline hover:text-slate-900"
@@ -47,7 +47,7 @@
                 (click)="openMonsterInfo('behavior')">Behavior</button>
         </nav>
         <br><br>
-        <div class="ml-2">
+        <div class="mx-2">
             <div id="description" class="dm-info text-justify">
                 <p>Terrible wyverns called "Kings of the Skies". Along with Rathians, they stake wide territories
                     centered
