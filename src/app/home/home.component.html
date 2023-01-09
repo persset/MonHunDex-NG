@@ -38,8 +38,50 @@
     </table>
 
     <div id="daily-monster-info">
-        <h2 class="text-2xl division border-solid border-b-2 border-grey">
-            <p>Description</p>
+        <nav class="flex left space-x-4 fixed h-10 border rounded ml-2">
+            <button class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:underline hover:text-slate-900"
+                (click)="openMonsterInfo('description')">Description</button>
+            <button class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:underline hover:text-slate-900"
+                (click)="openMonsterInfo('physiology')">Physiology</button>
+            <button class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:underline hover:text-slate-900"
+                (click)="openMonsterInfo('behavior')">Behavior</button>
+        </nav>
+        <br><br>
+        <div class="ml-2">
+            <div id="description" class="dm-info text-justify">
+                <p>Terrible wyverns called "Kings of the Skies". Along with Rathians, they stake wide territories
+                    centered
+                    around their nests. Rathalos descend on invaders from the sky, attacking with poison claws and
+                    breath of
+                    fire.</p>
+            </div>
+
+            <div id="physiology" class="dm-info text-justify" style="display:none">
+                <p>Rathalos are large, bipedal wyverns with a spiny, armored hide covering their body. Their outer shell
+                    features much brighter and more vibrant colors than that of their female counterpart, the Rathian.
+                    It is
+                    primarily bright red, with black markings throughout. Like the Rathian, Rathalos possess a flame sac
+                    which is used to produce deadly flaming projectiles from the mouth. The talons upon their feet are
+                    highly poisonous and are known to inflict toxic mortal wounds on larger prey. In addition, their
+                    long,
+                    thick tail features a heavy spiked club at the end. Rathalos' wing membranes feature ornate patterns
+                    which are likely used to attract potential mates. </p>
+            </div>
+
+            <div id="behavior" class="dm-info text-justify" style="display:none">
+                <p>Rathalos are highly territorial monsters, and as such, are aggressive towards intruders. They will
+                    chase
+                    away or attempt to kill any monster which may pose a threat to their land. While hunting, Rathalos
+                    will
+                    stalk prey from the air before swooping in for the kill. Once they have successfully brought down
+                    their
+                    prey, they will carry it away to eat in private, safe from scavengers or other large monsters which
+                    might attempt to steal the kill. </p>
+            </div>
+        </div>
+
+        <!--<h2 class="text-2xl division border-solid border-b-2 border-grey">
+        <p>Description</p>
         </h2>
         <p>Terrible wyverns called "Kings of the Skies". Along with Rathians, they stake wide territories centered
             around their nests. Rathalos descend on invaders from the sky, attacking with poison claws and breath of
@@ -51,6 +93,6 @@
             or attempt to kill any monster which may pose a threat to their land. While hunting, Rathalos will stalk
             prey from the air before swooping in for the kill. Once they have successfully brought down their prey, they
             will carry it away to eat in private, safe from scavengers or other large monsters which might attempt to
-            steal the kill. </p>
+            steal the kill. </p>-->
     </div>
 </div>
