@@ -10,7 +10,7 @@ export class HomeComponent {
     let elements: HTMLCollectionOf<Element> =
       document.getElementsByClassName('dm-info');
     for (let i: number = 0; i < elements.length; i++) {
-      elements[i].setAttribute('style', 'display: none');
+      elements[i].setAttribute('style', 'display: none;');
     }
 
     document
