@@ -8,7 +8,7 @@ import { Ailment } from '../models/Ailment';
   providedIn: 'root',
 })
 export class AilmentService {
-  private url = 'Ailment';
+  private url = 'ailment';
   constructor(private http: HttpClient) {}
 
   public GetAllAilments(): Observable<Ailment[]> {

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class MonsterService {
-  private url = 'Monster';
+  private url = 'monster';
   constructor(private http: HttpClient) {}
 
   public getAllMonsters(): Observable<Monster[]> {
