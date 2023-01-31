@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Monster } from '../models/monster';
+import { Monster } from '../models/Monster';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 

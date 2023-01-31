@@ -1,14 +1,16 @@
 <div class="flex justify m-1">
-    <table class="table-fixed border-2 border-black-500 content-center">
+    <table *ngFor="let monster of monsters" class="table-fixed border-2 border-black-500 content-center m-2">
         <thead>
-            <th class="text-center">Name</th>
+            <th class="text-center">{{monster.name}}</th>
         </thead>
         <tbody>
             <tr class="border-solid border-2">
-                <td class="text-center">img</td>
+                <td class="text-center"><img
+                        src="//archives.bulbagarden.net/media/upload/thumb/a/a7/196Espeon.png/250px-196Espeon.png"
+                        alt="Rathinho"></td>
             </tr>
             <tr class="border-solid border-2 border-black-500">
-                <td>Type</td>
+                <td>{{monster.monsterClassId}}</td>
             </tr>
             <tr class="border-solid border-2 border-black-500">
                 <td>Elements</td>
