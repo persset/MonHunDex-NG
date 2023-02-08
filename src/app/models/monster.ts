@@ -5,4 +5,5 @@ export class Monster {
   physiology = '';
   behaviorId?: number;
   monsterClassId?: number;
+  iconUrl = '';
 }
